@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.header {
+    text-align: center;
+    background: #003366;
+    color: white;
+    padding: 50px 20px;
+}
+
+.header .contact-button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header .contact-button:hover {
+    transform: scale(1.1);
+    background-color: #cc5200;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-details, .message-form {
+    width: 45%;
+    margin-bottom: 20px;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.detail-item h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.message-form h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.message-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message-form input, .message-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.message-form input:focus, .message-form textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+    transform: scale(1.02);
+}
+
+.message-form button {
+    background: linear-gradient(to right, #ff6600, #ffa500);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.message-form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #cc5200, #ff7b00);
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.map-section iframe {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.map-section iframe:hover {
+    transform: scale(1.05);
+    border-color: #ff6600;
+}
+
+/* Footer */
+.footer {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.footer-content div {
+    width: 30%;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-content ul li:hover {
+    color: #ff6600;
+}
+
+.footer-content input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 70%;
+}
+
+.footer-content button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-content button:hover {
+    transform: scale(1.1);
+    background-color: #cc5200;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
