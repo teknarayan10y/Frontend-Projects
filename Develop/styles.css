@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.info h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 10px;
+    
+}
+
+.info p {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    padding: -5px;
+}
+
+.contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact i {
+    color: #333;
+    margin-right: 8px;
+}
+
+.about-me, .education, .skills {
+    margin-top: 20px;
+}
+
+.about-me h2, .education h2, .skills h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.about-me p {
+    line-height: 1.6;
+}
+
+.education ul, .skills ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.education li, .skills li {
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages ul, .expertise ul {
+    list-style-type: none;
+}
+
+.languages li, .expertise li {
+    margin-bottom: 5px;
+}
+
+.info {
+    background-color: #333;
+    color: white;
+}
+
+.expertise ul li::marker {
+
+    font-size: 14px;
+    color: black; 
+    
+}
+ul li::before {  
+    content: "●";
+    font-size: 14px;
+    color: black;   
+    margin-right: 2%; 
+}
+
+.languages {
+    list-style-type: none;  
+    padding: 0;
+    width: 200px;  
+}
+
+.languages li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  
+    font-weight: bold;
+}
+
+.languages li .bar {
+    flex-grow: 1; 
+    margin-left: 10px; 
+    height: 8px; 
+    background-color: #ccc;  
+    position: relative;
+    border-radius: 5px;
+}
+
+.languages li .bar .fill {
+    height: 100%;
+    background-color: black; 
+    border-radius: 5px;
+}
