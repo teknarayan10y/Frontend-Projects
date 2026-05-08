@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements</title>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box" style="display: flex;" data-createdby="Pawan"> I am A hero</div>
+        <div class="box"> I am A hero</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML =" i have been a insertrd <b> by Pawan</b>"
+        // div.setAttribute("class","create");
+        // document.querySelector(".conatiner").before(div);
+        // inserting the elements in box html,text,element also you can insert
+        let cont = document.querySelector(".conatiner")
+        cont.insertAdjacentHTML("afterbegin", "<b> i am  under the water pls help me theri is no much raining</b>")
+    </script>
+
+</body>
+</html>
